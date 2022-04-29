@@ -54,9 +54,13 @@ for entr in entradas: #cria um loop para percorrer todas as possiveis entradas
     if(teste < conta):       
       nao_aceita= False
       atual = False #localizar dentro da matriz o proximo estado
+      
+      with open("saida.txt","a") as arquivo:
+        arquivo.write("Entrada informada incorretamente ")
+    
       #print("erro")
       break
-
+      
     if nao_aceita == True:
       atual = matriz[entr][coluna] #localizar dentro da matriz o proximo estado
     
@@ -65,11 +69,11 @@ for entr in entradas: #cria um loop para percorrer todas as possiveis entradas
     if i == atual:
       contagem+=1
       with open("saida.txt","a") as arquivo:
-        arquivo.write(str(contagem)+" = "+"ACEITO\n")
+        arquivo.write("N°"+str(contagem)+" = "+"ACEITO\n")
         
     else:
       contagem+=1
       with open("saida.txt","a") as arquivo:
-        arquivo.write(str(contagem)+" = "+"NAO ACEITO\n")
+        arquivo.write("N°"+str(contagem)+" = "+"NAO ACEITO\n")
     
  
