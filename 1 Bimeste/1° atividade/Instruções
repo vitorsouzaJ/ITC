@@ -1,0 +1,12 @@
+documento automato:
+
+Primeira linha é o alfabeto
+Segunda linha é os estados
+Terceira linha é o estado incial
+Quarta linha é o estado final
+Quinta linha e as demais é a matriz (função de transição)
+
+documento entrada:
+Pode ser adicionado as entradas
+Se tiver akguma entrada diferente ele nao vai aceitar
+
